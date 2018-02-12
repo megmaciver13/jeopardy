@@ -1,5 +1,5 @@
 body {
-    background: black;
+    background: #7E7E7E;
 }
 
 h1 {
@@ -7,7 +7,10 @@ h1 {
 }
 
 h3 {
-    color: #EE8142;
+    color: white;
+    background: #4A2DD5;
+    width: 99%;
+    text-align: center;
 }
 
 .board-list {
