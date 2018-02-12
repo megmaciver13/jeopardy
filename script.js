@@ -27,16 +27,53 @@ var category5Button5 = document.querySelector(".category5 .button5");
 var score = 0;
 
 category1Button1.addEventListener("click", getQuestion);
+category1Button2.addEventListener("click", getQuestion2);
+
 
 function getQuestion () {
     var a = prompt('During prohibition this family of rum makers invited Americans to Cuba for weekend-long parties?')
     if(a === 'bacardi'){
         console.log(typeof a);
         alert('Well Done. Correct answer')
-        console.log(parseInt(category1Button1.value));
     }
     else{
         alert('Sorry, incorrect, it is Bacardi')
     }
-
 }
+function getQuestion2 () {
+    var a = prompt('This Italian liqueur is made from tonda gentile hazelnuts grown in the Piedmont region?')
+    if(a === 'frangelico'){
+        alert('Well Done. Correct answer')
+    }
+    else{
+        alert('Sorry, incorrect, it is Frangelico')
+    }
+}
+function getQuestion3 () {
+    var a = prompt('In a play on a book title, its the liquor that precedes mockingbird in the name of a cocktail?')
+    if(a === 'tequila'){
+        alert('Well Done. Correct answer')
+    }
+    else{
+        alert('Sorry, incorrect, it is Tequila')
+    }
+}
+function getQuestion4 () {
+    var a = prompt('This Italian liqueur is made from tonda gentile hazelnuts grown in the Piedmont region?')
+    if(a === 'frangelico'){
+        alert('Well Done. Correct answer')
+    }
+    else{
+        alert('Sorry, incorrect, it is Frangelico')
+    }
+}
+function getQuestion5 () {
+    var a = prompt('This Italian liqueur is made from tonda gentile hazelnuts grown in the Piedmont region?')
+    if(a === 'frangelico'){
+        alert('Well Done. Correct answer')
+    }
+    else{
+        alert('Sorry, incorrect, it is Frangelico')
+    }
+}
+
