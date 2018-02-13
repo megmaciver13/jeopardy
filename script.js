@@ -131,7 +131,7 @@ function getQuestion5() {
     category1Button5.classList.add("disabled");
     category1Button5.disabled = true;
 }
-//grabs the category 2 questions and answers
+//grabs the category 2 questions and answers 
 function cat2GetQuestion() {
     var a = prompt('During prohibition this family of rum makers invited Americans to Cuba for weekend-long parties?')
     if (a.toLowerCase() === 'bacardi') {
