@@ -1,9 +1,13 @@
 body {
-    background: #7E7E7E;
+    background: black;
 }
 
 h1 {
     text-align: center;
+    border-bottom: 1px;
+    color:white;
+    font-family: 'Acme', sans-serif;
+
 }
 
 h3 {
@@ -11,6 +15,8 @@ h3 {
     background: #4A2DD5;
     width: 99%;
     text-align: center;
+    font-family: 'Acme', sans-serif;
+
 }
 
 .board-list {
@@ -24,14 +30,23 @@ h3 {
 
 .question {
     box-sizing: border-box;
-    flex-grow: 1;
     width: 16%;
-    padding: 0;
+    padding: 1px;
     overflow: hidden; 
     list-style: none;
-    border: solid @bw white;
-    background: fade(slategrey,20%);
+    border: 1px solid  gold;
+    background: #4A2DD5;
+    border-radius: 20px;
 }
+
+.game-board {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 40px 3em 40px;
+    padding: 0;
+    justify-content: center;
+    align-content: center;
+} 
 
 h3 {
  font-size: 26px;
@@ -45,9 +60,21 @@ button {
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 16px;
+        font-size: 26px;
         width: 99%;
         height: 99%
+}
+.refresh{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 15px 36px;
+    border-radius: 6px;
+    text-align: center;
+    display: inline-block;
+    font-size: 26px;
+    width: 13%;
+
 }
 
 .disabled {
@@ -57,5 +84,16 @@ button {
 
 p {
     font-size: 30px;
+    color: white;
+    font-family: 'Acme', sans-serif;
+
+}
+
+foot h3{
+    font-size: 32px;
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+    text-align: center;
+    background: black;
 }
 
