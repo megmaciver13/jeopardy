@@ -1,6 +1,21 @@
 # Jeopardy
 
-Hello and welcome to the game of Jeopardy.  Naturally, I mimicked the styling of the gameshow where the user chooses the category and value of the category to illicit a specific question.  Rules of the game are very simple, the user selects the value in a specific question and has one chance to say the correct answer.  If the user is correct, the value of the selection is added to their score, if they are incorrect, nothing happens and the box is disabled for both.  
+##About
+This is my first large project here at General Assembly.
+The game has several categories with buttons under them with varying point values.
+User will challenge themselves on different categories with progressively harder questions.
 
-Using some basic html/css I created the initial style and look and then used Javascript to make the actual board.  From there, I created a global event listener to the new div elements in the board and attached each to a corresponding data location in the object.  Using prompt so that the user can respond with an answer and attaching that to a variable, I was able to use a quick comparison that would verify it was the correct answer or if not, display the correct answer in an alert.
+##Rules
+Users will have one chance to answer correctly on the selected category and value.  
+If the user answers correctly, the value will be added to their score, if not, nothing will be added, then that button will no longer be available to be clicked.
+If you wish to start over, click the restart button.
+
+##How to Play
+git clone this repo into your local drive
+in the terminal or command line, open index.html
+
+##Tools Used
+HTML
+CSS
+JavaScript
 
