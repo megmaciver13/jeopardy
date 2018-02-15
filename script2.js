@@ -1,11 +1,8 @@
 
-var restart = document.querySelector(".refresh");
 var button = document.querySelectorAll(".button");  //assigns all of the buttons classes to a variable
 var scoreHtml = document.querySelector(".score");   // assigns score class to a variable
 var score = 0;
 
-restart.addEventListener("click", restart);
-//this function will create the board
 function makeButtons(category){     //
     for(var i = 1; i <= 5; i++){
         var button = document.createElement("BUTTON");
