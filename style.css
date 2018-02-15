@@ -33,6 +33,25 @@ h3 {
     background: fade(slategrey,20%);
 }
 
+.game-board {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 40px 3em 40px;
+    padding: 0;
+    justify-content: center;
+    align-content: center;
+}
+.game-board .question {
+    box-sizing: border-box;
+    flex-grow: 1;
+    width: 16%;
+    padding: 0;
+    overflow: hidden; 
+    list-style: none;
+    border: solid @bw white;
+    background: fade(slategrey,20%);
+}
+
 h3 {
  font-size: 26px;
 }
@@ -45,7 +64,7 @@ button {
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 16px;
+        font-size: 24px;
         width: 99%;
         height: 99%
 }

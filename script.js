@@ -27,6 +27,8 @@ var category5Button4 = document.querySelector(".category5 .button4");
 var scoreHtml = document.querySelector(".score");
 var score = 0;
 
+
+
 //creates the event listeners for all the events
 category1Button0.addEventListener("click", getQuestion);
 category1Button1.addEventListener("click", getQuestion2);
