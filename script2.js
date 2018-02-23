@@ -4,6 +4,8 @@ var button = document.querySelectorAll(".button");  //assigns all of the buttons
 var scoreHtml = document.querySelector(".score");   // assigns score class to a variable
 var score = 0;
 
+// A pro move is to declare all variables at the top, have functions in the middle, and list event listeners at the add of your file (you are most of the way there!)
+
 restart.addEventListener("click", restart);
 //this function will create the board
 function makeButtons(category){     //
@@ -24,8 +26,15 @@ function makeButtons(category){     //
 document.querySelector(".game-board").addEventListener("click", function(evt){
     var a = parseInt(evt.srcElement.classList[1].slice(8,9))
     var b = parseInt(evt.srcElement.classList[3].slice(6,7))
+    // ^^ Another way to identify HTML elements as specific questions & categories is to use global data attributes:
+    // More info on that here: https://www.w3schools.com/tags/att_global_data.asp
+    // Basically, you can include an attribute called 'data-anything' (e.g. data-category=1 and data-question=200)
+    // Then you can call that info by calling .dataset.category and dataset.question (https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset)
+    // That way, you can leave classes for styling identifcation (I think I was the one to tell you to use classes, but I remembered a better way now!)
     var source = evt.srcElement;
     var currentCategory = allQuestions[a-1]
+    // Hopefully, using the dataset attribute I mentioned above, you can assign data values in the HTML
+    // so that you don't have to do any '-1'
     var currentQuestions = allQuestions[b-1];
     var currentAnswer = allQuestions[b-1];
     var currentScore = allQuestions[b-1];
@@ -40,6 +49,10 @@ document.querySelector(".game-board").addEventListener("click", function(evt){
     evt.srcElement.setAttribute("disabled", "disabled");   //this is disabling the button
     evt.srcElement.classList.add("disabled");               //this changes the color of the disabled buttons
 })
+
+// Consider storing all of your question data (in var allQuestions) in a separate js file, then just link that js file into the HTML as well.
+// Separating it in another file keeps this file, where all your game logic is, less cluttered (separation of concerns!)
+
 //Below is the data object housing all of the information
 var allQuestions = [
     {
@@ -116,3 +129,4 @@ makeButtons(allQuestions[2]);
 makeButtons(allQuestions[3]);
 makeButtons(allQuestions[4]);
 makeButtons(allQuestions[5]);
+// ^ Consider making a for loop to create these - that would bring it down to three lines of code, instead of six
